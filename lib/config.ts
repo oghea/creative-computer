@@ -4,9 +4,9 @@
 export const site = {
   name: "Creative Computer",
 
-  // WhatsApp in international format, digits only (placeholder until confirmed).
-  whatsapp: "6281234567890",
-  phoneDisplay: "+62 812-3456-7890",
+  // WhatsApp in international format, digits only.
+  whatsapp: "6285177123804",
+  phoneDisplay: "+62 851-7712-3804",
   email: "halo@creativecomputer.id",
 
   address: {
