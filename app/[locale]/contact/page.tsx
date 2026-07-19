@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { useTranslations, useLocale } from "next-intl";
-import { MapPin, Phone, Mail, Clock, ArrowUpRight } from "lucide-react";
+import { MapPin, Phone, Clock, ArrowUpRight } from "lucide-react";
 import { Eyebrow } from "@/components/ui/section";
 import { WhatsAppButton } from "@/components/ui/button";
 import { site } from "@/lib/config";
@@ -99,13 +99,6 @@ function ContactContent() {
                 >
                   <Phone className="h-4.5 w-4.5 text-blue" />
                   {site.phoneDisplay}
-                </a>
-                <a
-                  href={`mailto:${site.email}`}
-                  className="inline-flex items-center gap-2.5 text-muted hover:text-orange"
-                >
-                  <Mail className="h-4.5 w-4.5 text-blue" />
-                  {site.email}
                 </a>
               </div>
               <WhatsAppButton

@@ -7,7 +7,6 @@ export const site = {
   // WhatsApp in international format, digits only.
   whatsapp: "6285177123804",
   phoneDisplay: "+62 851-7712-3804",
-  email: "halo@creativecomputer.id",
 
   address: {
     street: "Jl. Contoh Alamat No. 123",

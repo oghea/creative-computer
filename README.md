@@ -29,7 +29,7 @@ npm run start    # serve the production build
 
 | What | Where |
 | --- | --- |
-| **WhatsApp number**, phone, email, address, hours, socials | `lib/config.ts` |
+| **WhatsApp number**, phone, address, hours, Instagram | `lib/config.ts` |
 | **All copy** (both languages) | `messages/id.json`, `messages/en.json` |
 | **Simulator parts & ratings** | `data/components.ts` |
 | **Brand colors / fonts** | `app/globals.css` (`@theme`), `app/fonts.ts` |

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/config";
 import { waLink } from "@/lib/whatsapp";
@@ -78,12 +78,6 @@ export default function Footer() {
               <Phone className="mt-0.5 h-4.5 w-4.5 shrink-0 text-orange" />
               <a href={`tel:${site.phoneDisplay.replace(/\s/g, "")}`} className="hover:text-orange">
                 {site.phoneDisplay}
-              </a>
-            </li>
-            <li className="flex gap-3">
-              <Mail className="mt-0.5 h-4.5 w-4.5 shrink-0 text-orange" />
-              <a href={`mailto:${site.email}`} className="hover:text-orange">
-                {site.email}
               </a>
             </li>
             <li className="flex gap-3">
