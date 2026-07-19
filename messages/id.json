@@ -20,9 +20,9 @@
   "home": {
     "hero": {
       "eyebrow": "Toko Komputer · Jakarta",
-      "titleLine1": "Rakit. Servis.",
-      "titleLine2": "Upgrade.",
-      "subtitle": "Dari sparepart satuan sampai PC rakitan penuh. Kami bantu pilih komponen yang pas, rakit rapi, dan servis saat dibutuhkan — semua bisa langsung dibahas lewat WhatsApp.",
+      "titleLine1": "Jual. Rakit.",
+      "titleLine2": "Servis.",
+      "subtitle": "Laptop baru & bekas, PC gamer, printer, CCTV, sampai aksesoris — plus service laptop, PC, printer, dan jaringan. Semua bisa langsung dibahas lewat WhatsApp.",
       "chips": ["Garansi resmi", "Teknisi berpengalaman", "Sparepart original"]
     },
     "servicesOverview": {
@@ -30,10 +30,10 @@
       "title": "Empat hal, satu bengkel",
       "subtitle": "Semua kebutuhan komputermu di satu tempat.",
       "items": [
-        { "id": "sales", "title": "Sparepart", "desc": "Prosesor, VGA, motherboard, RAM, storage, PSU — komponen original dengan garansi." },
-        { "id": "builds", "title": "Rakit PC Custom", "desc": "PC dirakit sesuai kebutuhan dan budget-mu, diuji sebelum dikirim." },
-        { "id": "service", "title": "Servis & Upgrade", "desc": "Diagnosa, perbaikan, cleaning, sampai upgrade performa." },
-        { "id": "accessories", "title": "Aksesoris", "desc": "Keyboard, mouse, headset, monitor, dan periferal pendukung." }
+        { "id": "laptop", "title": "Laptop", "desc": "Laptop baru & bekas bergaransi untuk kerja, kuliah, dan gaming." },
+        { "id": "pcgamer", "title": "PC Gamer", "desc": "PC gaming rakitan sesuai budget — coba dulu di simulator kami." },
+        { "id": "printercctv", "title": "Printer & CCTV", "desc": "Printer rumah/kantor dan kamera CCTV lengkap dengan pemasangan." },
+        { "id": "service", "title": "Service", "desc": "Laptop, PC, printer, dan jaringan — didiagnosa dulu, baru diperbaiki." }
       ]
     },
     "whyUs": {
@@ -72,35 +72,32 @@
     }
   },
   "services": {
-    "eyebrow": "Layanan",
-    "title": "Semua soal PC, kami urus",
+    "eyebrow": "Penjualan & Service",
+    "title": "Semua soal komputermu, kami urus",
     "subtitle": "Sales, service, dan accessories — sesuai janji di logo kami.",
-    "items": [
-      {
-        "id": "sales",
-        "title": "Sparepart & Komponen",
-        "desc": "Komponen original bergaransi untuk build baru maupun upgrade. Kami bantu pastikan setiap part cocok satu sama lain.",
-        "features": ["Prosesor Intel & AMD", "Kartu grafis NVIDIA & AMD", "Motherboard, RAM, storage", "Power supply & casing"]
-      },
-      {
-        "id": "builds",
-        "title": "Rakit PC Custom",
-        "desc": "Ceritakan kebutuhan dan budget, kami susun daftar komponen, rakit dengan rapi, dan uji stabilitas sebelum sampai ke tanganmu.",
-        "features": ["Konsultasi komponen gratis", "Cable management rapi", "Stress test & benchmark", "Instalasi OS & driver"]
-      },
-      {
-        "id": "service",
-        "title": "Servis & Upgrade",
-        "desc": "PC atau laptop bermasalah? Kami diagnosa dulu, jelaskan penyebabnya, baru perbaiki. Termasuk upgrade agar terasa baru lagi.",
-        "features": ["Diagnosa & perbaikan", "Cleaning & re-paste", "Upgrade SSD / RAM / VGA", "Recovery data (best effort)"]
-      },
-      {
-        "id": "accessories",
-        "title": "Aksesoris & Periferal",
-        "desc": "Lengkapi setup-mu dengan periferal yang nyaman dan awet, dari yang harian sampai gaming.",
-        "features": ["Keyboard & mouse", "Headset & speaker", "Monitor", "Kabel, adaptor & UPS"]
-      }
-    ],
+    "sales": {
+      "title": "Penjualan",
+      "desc": "Produk baru dan bekas bergaransi, siap pakai.",
+      "items": [
+        { "id": "laptop-baru", "name": "Laptop Baru", "desc": "Berbagai merek laptop baru bergaransi resmi untuk kerja, kuliah, dan gaming." },
+        { "id": "laptop-bekas", "name": "Laptop Bekas", "desc": "Laptop second berkualitas, sudah dicek menyeluruh dan bergaransi toko." },
+        { "id": "pc-gamer", "name": "PC Gamer", "desc": "PC gaming rakitan sesuai budget dan kebutuhanmu — mulai dari simulator kami." },
+        { "id": "printer", "name": "Printer", "desc": "Printer inkjet, laser, dan multifungsi untuk rumah maupun kantor." },
+        { "id": "cctv", "name": "CCTV", "desc": "Kamera pengaman untuk rumah dan usaha, lengkap dengan pemasangan." },
+        { "id": "spare-part", "name": "Spare Part", "desc": "Suku cadang dan komponen original untuk laptop maupun PC." },
+        { "id": "accessories", "name": "Aksesoris", "desc": "Keyboard, mouse, headset, dan periferal pendukung lainnya." }
+      ]
+    },
+    "service": {
+      "title": "Service",
+      "desc": "Didiagnosa dulu, dijelaskan, baru diperbaiki.",
+      "items": [
+        { "id": "laptop", "name": "Service Laptop", "desc": "Mati total, lemot, keyboard, LCD, atau engsel rusak — kami tangani." },
+        { "id": "pc", "name": "Service PC", "desc": "Perbaikan, upgrade, cleaning, sampai install ulang sistem." },
+        { "id": "printer", "name": "Service Printer", "desc": "Masalah cetak, infus tinta, dan perbaikan printer." },
+        { "id": "jaringan", "name": "Jaringan", "desc": "Pemasangan dan perbaikan jaringan internet rumah maupun kantor." }
+      ]
+    },
     "ctaTitle": "Butuh salah satu layanan ini?",
     "ctaSubtitle": "Chat kami di WhatsApp — sebutkan kebutuhanmu, kami bantu dari sana."
   },

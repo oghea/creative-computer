@@ -1,14 +1,14 @@
 import { useTranslations } from "next-intl";
-import { Cpu, PcCase, Wrench, Keyboard, ArrowRight } from "lucide-react";
+import { Laptop, Gamepad2, Printer, Wrench, ArrowRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Section, SectionHeading } from "@/components/ui/section";
 
 const ICONS: Record<string, LucideIcon> = {
-  sales: Cpu,
-  builds: PcCase,
+  laptop: Laptop,
+  pcgamer: Gamepad2,
+  printercctv: Printer,
   service: Wrench,
-  accessories: Keyboard,
 };
 
 type Item = { id: string; title: string; desc: string };
@@ -27,7 +27,7 @@ export default function ServicesOverview() {
       />
       <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((item) => {
-          const Icon = ICONS[item.id] ?? Cpu;
+          const Icon = ICONS[item.id] ?? Wrench;
           return (
             <div
               key={item.id}

@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
-import { Cpu, PcCase, Wrench, Keyboard, Check } from "lucide-react";
+import {
+  Laptop,
+  LaptopMinimal,
+  Gamepad2,
+  Printer,
+  Cctv,
+  Cpu,
+  Keyboard,
+  PcCase,
+  Network,
+  ShoppingBag,
+  Wrench,
+} from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Section, SectionHeading, Eyebrow } from "@/components/ui/section";
 import { WhatsAppButton } from "@/components/ui/button";
-import { WhatsAppIcon } from "@/components/ui/icons";
-import { waLink } from "@/lib/whatsapp";
 
 export async function generateMetadata({
   params,
@@ -18,24 +28,75 @@ export async function generateMetadata({
   return { title: t("title") };
 }
 
-const ICONS: Record<string, LucideIcon> = {
-  sales: Cpu,
-  builds: PcCase,
-  service: Wrench,
+const SALES_ICONS: Record<string, LucideIcon> = {
+  "laptop-baru": Laptop,
+  "laptop-bekas": LaptopMinimal,
+  "pc-gamer": Gamepad2,
+  printer: Printer,
+  cctv: Cctv,
+  "spare-part": Cpu,
   accessories: Keyboard,
 };
 
-type Item = {
-  id: string;
+const SERVICE_ICONS: Record<string, LucideIcon> = {
+  laptop: Laptop,
+  pc: PcCase,
+  printer: Printer,
+  jaringan: Network,
+};
+
+type Item = { id: string; name: string; desc: string };
+
+function Group({
+  groupKey,
+  icon: GroupIcon,
+  items,
+  icons,
+  title,
+  desc,
+}: {
+  groupKey: string;
+  icon: LucideIcon;
+  items: Item[];
+  icons: Record<string, LucideIcon>;
   title: string;
   desc: string;
-  features: string[];
-};
+}) {
+  return (
+    <div className="flex flex-col gap-8">
+      <div className="flex items-center gap-4">
+        <span className="flex h-11 w-11 items-center justify-center bg-orange text-white">
+          <GroupIcon className="h-5.5 w-5.5" />
+        </span>
+        <div>
+          <h2 className="text-2xl sm:text-3xl">{title}</h2>
+          <p className="text-sm text-muted">{desc}</p>
+        </div>
+      </div>
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {items.map((item) => {
+          const Icon = icons[item.id] ?? Wrench;
+          return (
+            <div
+              key={`${groupKey}-${item.id}`}
+              className="notch flex flex-col gap-3 border border-mist-2 bg-paper p-6 transition-colors hover:border-orange/40"
+            >
+              <Icon className="h-6 w-6 text-blue" />
+              <h3 className="text-lg">{item.name}</h3>
+              <p className="text-sm leading-relaxed text-muted">{item.desc}</p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
 
 function ServicesContent() {
   const t = useTranslations("services");
   const tc = useTranslations("common");
-  const items = t.raw("items") as Item[];
+  const salesItems = t.raw("sales.items") as Item[];
+  const serviceItems = t.raw("service.items") as Item[];
 
   return (
     <>
@@ -50,54 +111,33 @@ function ServicesContent() {
       </section>
 
       <Section tone="paper" className="!pt-16">
-        <div className="flex flex-col gap-4">
-          {items.map((item, i) => {
-            const Icon = ICONS[item.id] ?? Cpu;
-            return (
-              <article
-                key={item.id}
-                className="notch grid gap-8 border border-mist-2 bg-paper p-8 md:grid-cols-[1fr_1fr] md:p-10"
-              >
-                <div className="flex flex-col gap-4">
-                  <div className="flex items-center gap-4">
-                    <span className="flex h-12 w-12 items-center justify-center bg-ink text-orange">
-                      <Icon className="h-6 w-6" />
-                    </span>
-                    <span className="font-mono text-sm text-muted">
-                      0{i + 1}
-                    </span>
-                  </div>
-                  <h2 className="text-2xl sm:text-3xl">{item.title}</h2>
-                  <p className="max-w-md leading-relaxed text-muted">
-                    {item.desc}
-                  </p>
-                  <a
-                    href={waLink(`${item.title} — ${tc("waGeneric")}`)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-2 inline-flex w-fit items-center gap-2 font-mono text-sm font-medium text-blue hover:text-orange"
-                  >
-                    <WhatsAppIcon className="h-4 w-4" />
-                    {tc("waCta")}
-                  </a>
-                </div>
-                <ul className="flex flex-col justify-center gap-3 md:border-l md:border-mist-2 md:pl-10">
-                  {item.features.map((f) => (
-                    <li key={f} className="flex items-center gap-3 text-sm">
-                      <Check className="h-4.5 w-4.5 shrink-0 text-orange" />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            );
-          })}
+        <div className="flex flex-col gap-16">
+          <Group
+            groupKey="sales"
+            icon={ShoppingBag}
+            items={salesItems}
+            icons={SALES_ICONS}
+            title={t("sales.title")}
+            desc={t("sales.desc")}
+          />
+          <Group
+            groupKey="service"
+            icon={Wrench}
+            items={serviceItems}
+            icons={SERVICE_ICONS}
+            title={t("service.title")}
+            desc={t("service.desc")}
+          />
         </div>
       </Section>
 
       <Section tone="mist" className="!py-16">
         <div className="flex flex-col items-center gap-6 text-center">
-          <SectionHeading title={t("ctaTitle")} subtitle={t("ctaSubtitle")} align="center" />
+          <SectionHeading
+            title={t("ctaTitle")}
+            subtitle={t("ctaSubtitle")}
+            align="center"
+          />
           <WhatsAppButton message={tc("waGeneric")} label={tc("waCta")} size="lg" />
         </div>
       </Section>

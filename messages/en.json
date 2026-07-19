@@ -20,9 +20,9 @@
   "home": {
     "hero": {
       "eyebrow": "Computer Shop · Jakarta",
-      "titleLine1": "Build. Service.",
-      "titleLine2": "Upgrade.",
-      "subtitle": "From single parts to complete custom rigs. We help you pick components that fit, build them cleanly, and service them when needed — all just a WhatsApp message away.",
+      "titleLine1": "Buy. Build.",
+      "titleLine2": "Service.",
+      "subtitle": "New & used laptops, gaming PCs, printers, CCTV, and accessories — plus laptop, PC, printer, and network service. All just a WhatsApp message away.",
       "chips": ["Genuine warranty", "Experienced techs", "Original parts"]
     },
     "servicesOverview": {
@@ -30,10 +30,10 @@
       "title": "Four things, one workshop",
       "subtitle": "Everything your computer needs, in one place.",
       "items": [
-        { "id": "sales", "title": "Spare Parts", "desc": "CPUs, GPUs, motherboards, RAM, storage, PSUs — original components with warranty." },
-        { "id": "builds", "title": "Custom PC Builds", "desc": "Rigs built around your needs and budget, tested before they reach you." },
-        { "id": "service", "title": "Service & Upgrade", "desc": "Diagnostics, repairs, cleaning, and performance upgrades." },
-        { "id": "accessories", "title": "Accessories", "desc": "Keyboards, mice, headsets, monitors, and supporting peripherals." }
+        { "id": "laptop", "title": "Laptops", "desc": "New & used laptops with warranty for work, study, and gaming." },
+        { "id": "pcgamer", "title": "Gaming PCs", "desc": "Custom gaming rigs to fit your budget — try our simulator first." },
+        { "id": "printercctv", "title": "Printers & CCTV", "desc": "Home/office printers and CCTV cameras, installation included." },
+        { "id": "service", "title": "Service", "desc": "Laptop, PC, printer, and network — diagnosed first, then repaired." }
       ]
     },
     "whyUs": {
@@ -72,35 +72,32 @@
     }
   },
   "services": {
-    "eyebrow": "Services",
-    "title": "Everything PC, handled",
+    "eyebrow": "Sales & Service",
+    "title": "Everything computer, handled",
     "subtitle": "Sales, service, and accessories — exactly what our logo promises.",
-    "items": [
-      {
-        "id": "sales",
-        "title": "Parts & Components",
-        "desc": "Original, warrantied components for new builds and upgrades. We help make sure every part fits together.",
-        "features": ["Intel & AMD processors", "NVIDIA & AMD graphics cards", "Motherboards, RAM, storage", "Power supplies & cases"]
-      },
-      {
-        "id": "builds",
-        "title": "Custom PC Builds",
-        "desc": "Tell us your needs and budget, we draw up the parts list, assemble it cleanly, and stress-test for stability before it reaches you.",
-        "features": ["Free component consultation", "Tidy cable management", "Stress test & benchmark", "OS & driver installation"]
-      },
-      {
-        "id": "service",
-        "title": "Service & Upgrade",
-        "desc": "PC or laptop acting up? We diagnose first, explain the cause, then fix it — including upgrades to make it feel new again.",
-        "features": ["Diagnostics & repair", "Cleaning & re-paste", "SSD / RAM / GPU upgrades", "Data recovery (best effort)"]
-      },
-      {
-        "id": "accessories",
-        "title": "Accessories & Peripherals",
-        "desc": "Round out your setup with peripherals that are comfortable and built to last — everyday to gaming grade.",
-        "features": ["Keyboards & mice", "Headsets & speakers", "Monitors", "Cables, adapters & UPS"]
-      }
-    ],
+    "sales": {
+      "title": "Sales",
+      "desc": "New and used, warrantied and ready to go.",
+      "items": [
+        { "id": "laptop-baru", "name": "New Laptops", "desc": "A range of brand-new laptops with official warranty for work, study, and gaming." },
+        { "id": "laptop-bekas", "name": "Used Laptops", "desc": "Quality second-hand laptops, thoroughly checked and shop-warrantied." },
+        { "id": "pc-gamer", "name": "Gaming PCs", "desc": "Custom gaming rigs built to your budget and needs — start with our simulator." },
+        { "id": "printer", "name": "Printers", "desc": "Inkjet, laser, and all-in-one printers for home and office." },
+        { "id": "cctv", "name": "CCTV", "desc": "Security cameras for home and business, installation included." },
+        { "id": "spare-part", "name": "Spare Parts", "desc": "Original spare parts and components for both laptops and PCs." },
+        { "id": "accessories", "name": "Accessories", "desc": "Keyboards, mice, headsets, and other supporting peripherals." }
+      ]
+    },
+    "service": {
+      "title": "Service",
+      "desc": "Diagnosed first, explained, then repaired.",
+      "items": [
+        { "id": "laptop", "name": "Laptop Service", "desc": "Dead units, slowdowns, keyboards, screens, or hinges — we handle it." },
+        { "id": "pc", "name": "PC Service", "desc": "Repairs, upgrades, cleaning, and full system reinstalls." },
+        { "id": "printer", "name": "Printer Service", "desc": "Printing issues, ink systems, and printer repairs." },
+        { "id": "jaringan", "name": "Networking", "desc": "Internet network setup and repair for home and office." }
+      ]
+    },
     "ctaTitle": "Need one of these services?",
     "ctaSubtitle": "Message us on WhatsApp — tell us what you need and we'll take it from there."
   },
