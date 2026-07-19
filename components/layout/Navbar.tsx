@@ -32,10 +32,10 @@ export default function Navbar() {
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-5">
         <Link href="/" className="flex items-center" aria-label="Creative Computer">
           <Image
-            src="/brand/logo-trim.png"
+            src="/brand/logo-wordmark.png"
             alt="Creative Computer"
-            width={1400}
-            height={492}
+            width={1267}
+            height={349}
             priority
             className="h-9 w-auto"
           />
