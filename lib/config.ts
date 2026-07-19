@@ -27,8 +27,6 @@ export const site = {
   ],
 
   socials: {
-    instagram: "https://instagram.com/",
-    tiktok: "https://tiktok.com/",
-    facebook: "https://facebook.com/",
+    instagram: "https://www.instagram.com/creative.komputer",
   },
 } as const;

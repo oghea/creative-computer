@@ -4,12 +4,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/config";
 import { waLink } from "@/lib/whatsapp";
-import {
-  WhatsAppIcon,
-  TikTokIcon,
-  InstagramIcon,
-  FacebookIcon,
-} from "@/components/ui/icons";
+import { WhatsAppIcon, InstagramIcon } from "@/components/ui/icons";
 
 const NAV = [
   { href: "/", key: "home" },
@@ -39,22 +34,16 @@ export default function Footer() {
             {t("tagline")}
           </p>
           <div className="flex gap-2">
-            {[
-              { href: site.socials.instagram, label: "Instagram", Icon: InstagramIcon },
-              { href: site.socials.tiktok, label: "TikTok", Icon: TikTokIcon },
-              { href: site.socials.facebook, label: "Facebook", Icon: FacebookIcon },
-            ].map(({ href, label, Icon }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={label}
-                className="flex h-10 w-10 items-center justify-center rounded-md border border-white/15 text-white/80 transition-colors hover:border-orange hover:text-orange"
-              >
-                <Icon className="h-4.5 w-4.5" />
-              </a>
-            ))}
+            <a
+              href={site.socials.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="inline-flex items-center gap-2 rounded-md border border-white/15 px-3 py-2 text-sm text-white/80 transition-colors hover:border-orange hover:text-orange"
+            >
+              <InstagramIcon className="h-4.5 w-4.5" />
+              @creative.komputer
+            </a>
           </div>
         </div>
 
