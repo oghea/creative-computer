@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "titleDefault": "Creative Computer — PC Builds, Service & Parts",
+    "description": "Computer shop in Jakarta: spare parts, custom PC builds, service & upgrades, and accessories. Consult and order directly on WhatsApp."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "simulator": "Build Simulator",
+    "contact": "Contact"
+  },
+  "common": {
+    "waCta": "Chat on WhatsApp",
+    "waShort": "WhatsApp",
+    "waGeneric": "Hi Creative Computer! I'd like to ask about your products/services.",
+    "trySimulator": "Try the Build Simulator",
+    "seeServices": "See Services",
+    "getDirections": "Open Map"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Computer Shop · Jakarta",
+      "titleLine1": "Build. Service.",
+      "titleLine2": "Upgrade.",
+      "subtitle": "From single parts to complete custom rigs. We help you pick components that fit, build them cleanly, and service them when needed — all just a WhatsApp message away.",
+      "chips": ["Genuine warranty", "Experienced techs", "Original parts"]
+    },
+    "servicesOverview": {
+      "eyebrow": "What we do",
+      "title": "Four things, one workshop",
+      "subtitle": "Everything your computer needs, in one place.",
+      "items": [
+        { "id": "sales", "title": "Spare Parts", "desc": "CPUs, GPUs, motherboards, RAM, storage, PSUs — original components with warranty." },
+        { "id": "builds", "title": "Custom PC Builds", "desc": "Rigs built around your needs and budget, tested before they reach you." },
+        { "id": "service", "title": "Service & Upgrade", "desc": "Diagnostics, repairs, cleaning, and performance upgrades." },
+        { "id": "accessories", "title": "Accessories", "desc": "Keyboards, mice, headsets, monitors, and supporting peripherals." }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Why Creative Computer",
+      "title": "Buying parts is easy. Finding people you can trust isn't.",
+      "items": [
+        { "title": "Clear warranty", "desc": "Every component and build is covered, explained transparently up front." },
+        { "title": "Experienced techs", "desc": "Handled by people who genuinely know hardware — not just assembly." },
+        { "title": "Original parts", "desc": "We sell only new, genuine stock — no surprises down the road." },
+        { "title": "Free consultation", "desc": "Not sure what to pick? Chat first and we'll shape a build that fits." }
+      ]
+    },
+    "featured": {
+      "eyebrow": "Sample builds",
+      "title": "A starting point, not a fixed price",
+      "subtitle": "A look at popular builds. Everything is adjustable — and our simulator helps map out what you actually need.",
+      "items": [
+        { "name": "Starter Gaming", "tag": "Gaming", "desc": "Smooth frame rates in popular 1080p titles without breaking the bank." },
+        { "name": "Creator Rig", "tag": "Content Creation", "desc": "Video editing, rendering, and streaming with a fast CPU and plenty of RAM." },
+        { "name": "Office & Study", "tag": "Work / Everyday", "desc": "Compact, quiet, and responsive for work, study, and daily multitasking." }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "What customers say",
+      "title": "Trusted by builders & professionals",
+      "items": [
+        { "name": "Rizky A.", "role": "Gamer", "quote": "They helped me pick parts for my budget and the build was spotless. Cable management on point." },
+        { "name": "Dewi S.", "role": "Video Editor", "quote": "WhatsApp consultation was fast and honest. The PC handles a full day of editing with ease." },
+        { "name": "Bagas P.", "role": "Student", "quote": "Upgraded my old laptop with an SSD and it flies again. Clear pricing, no hidden fees." }
+      ]
+    },
+    "ctaBanner": {
+      "title": "Ready to build or need a repair?",
+      "subtitle": "Tell us what you need. Fast replies, honest advice, no pressure.",
+      "cta": "Start a WhatsApp chat"
+    }
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Everything PC, handled",
+    "subtitle": "Sales, service, and accessories — exactly what our logo promises.",
+    "items": [
+      {
+        "id": "sales",
+        "title": "Parts & Components",
+        "desc": "Original, warrantied components for new builds and upgrades. We help make sure every part fits together.",
+        "features": ["Intel & AMD processors", "NVIDIA & AMD graphics cards", "Motherboards, RAM, storage", "Power supplies & cases"]
+      },
+      {
+        "id": "builds",
+        "title": "Custom PC Builds",
+        "desc": "Tell us your needs and budget, we draw up the parts list, assemble it cleanly, and stress-test for stability before it reaches you.",
+        "features": ["Free component consultation", "Tidy cable management", "Stress test & benchmark", "OS & driver installation"]
+      },
+      {
+        "id": "service",
+        "title": "Service & Upgrade",
+        "desc": "PC or laptop acting up? We diagnose first, explain the cause, then fix it — including upgrades to make it feel new again.",
+        "features": ["Diagnostics & repair", "Cleaning & re-paste", "SSD / RAM / GPU upgrades", "Data recovery (best effort)"]
+      },
+      {
+        "id": "accessories",
+        "title": "Accessories & Peripherals",
+        "desc": "Round out your setup with peripherals that are comfortable and built to last — everyday to gaming grade.",
+        "features": ["Keyboards & mice", "Headsets & speakers", "Monitors", "Cables, adapters & UPS"]
+      }
+    ],
+    "ctaTitle": "Need one of these services?",
+    "ctaSubtitle": "Message us on WhatsApp — tell us what you need and we'll take it from there."
+  },
+  "simulator": {
+    "eyebrow": "Build Simulator",
+    "title": "Assemble your build, see what it's great at",
+    "subtitle": "Pick a component in each category. Instead of a price, you instantly see how well the build suits gaming, work, content creation, and everyday use. Happy with it? Send it to WhatsApp for a quote.",
+    "buildTitle": "Choose Components",
+    "ratingTitle": "Best suited for",
+    "summaryTitle": "Your build",
+    "choosePlaceholder": "Choose a part…",
+    "notSelected": "Not selected",
+    "emptyState": "Start picking components to see the ratings.",
+    "selectedCount": "{count} of {total} components chosen",
+    "sendCta": "Send build to WhatsApp",
+    "resetCta": "Reset",
+    "priceNote": "Prices aren't shown — we give you the best quote on WhatsApp based on current stock.",
+    "categories": {
+      "cpu": "Processor (CPU)",
+      "gpu": "Graphics Card (GPU)",
+      "motherboard": "Motherboard",
+      "ram": "Memory (RAM)",
+      "storage": "Storage",
+      "psu": "Power Supply",
+      "cooler": "CPU Cooler",
+      "case": "Case"
+    },
+    "useCases": {
+      "gaming": "Gaming",
+      "work": "Work / Office",
+      "content": "Content Creation",
+      "everyday": "Everyday"
+    },
+    "tiers": {
+      "entry": "Budget",
+      "mid": "Mid-range",
+      "high": "High-end",
+      "enthusiast": "Enthusiast"
+    },
+    "levels": ["Basic", "Fair", "Good", "Great", "Excellent"],
+    "wa": {
+      "greeting": "Hi Creative Computer! I'm interested in this PC build:",
+      "buildHeading": "Components:",
+      "suitedHeading": "Best suited for:",
+      "closing": "Could I get a quote? Thanks!"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact & Location",
+    "title": "Drop by or chat first",
+    "subtitle": "Visit the shop to see the goods and consult in person, or start on WhatsApp — whichever is easier for you.",
+    "addressTitle": "Shop Address",
+    "hoursTitle": "Opening Hours",
+    "reachTitle": "Reach Us",
+    "closed": "Closed",
+    "mapTitle": "Shop location map"
+  },
+  "footer": {
+    "tagline": "Sales · Service · Accessories. A trusted computer shop for builds, service, and upgrades.",
+    "explore": "Explore",
+    "reach": "Reach us",
+    "follow": "Follow",
+    "rights": "All rights reserved."
+  }
+}

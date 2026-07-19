@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "titleDefault": "Creative Computer — Rakit, Servis & Sparepart PC",
+    "description": "Toko komputer di Jakarta: sparepart, rakit PC custom, servis & upgrade, serta aksesoris. Konsultasi dan pemesanan langsung lewat WhatsApp."
+  },
+  "nav": {
+    "home": "Beranda",
+    "services": "Layanan",
+    "simulator": "Simulator Rakitan",
+    "contact": "Kontak"
+  },
+  "common": {
+    "waCta": "Hubungi via WhatsApp",
+    "waShort": "WhatsApp",
+    "waGeneric": "Halo Creative Computer! Saya mau bertanya soal produk/layanan.",
+    "trySimulator": "Coba Simulator Rakitan",
+    "seeServices": "Lihat Layanan",
+    "getDirections": "Lihat Peta"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Toko Komputer · Jakarta",
+      "titleLine1": "Rakit. Servis.",
+      "titleLine2": "Upgrade.",
+      "subtitle": "Dari sparepart satuan sampai PC rakitan penuh. Kami bantu pilih komponen yang pas, rakit rapi, dan servis saat dibutuhkan — semua bisa langsung dibahas lewat WhatsApp.",
+      "chips": ["Garansi resmi", "Teknisi berpengalaman", "Sparepart original"]
+    },
+    "servicesOverview": {
+      "eyebrow": "Yang kami kerjakan",
+      "title": "Empat hal, satu bengkel",
+      "subtitle": "Semua kebutuhan komputermu di satu tempat.",
+      "items": [
+        { "id": "sales", "title": "Sparepart", "desc": "Prosesor, VGA, motherboard, RAM, storage, PSU — komponen original dengan garansi." },
+        { "id": "builds", "title": "Rakit PC Custom", "desc": "PC dirakit sesuai kebutuhan dan budget-mu, diuji sebelum dikirim." },
+        { "id": "service", "title": "Servis & Upgrade", "desc": "Diagnosa, perbaikan, cleaning, sampai upgrade performa." },
+        { "id": "accessories", "title": "Aksesoris", "desc": "Keyboard, mouse, headset, monitor, dan periferal pendukung." }
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Kenapa Creative Computer",
+      "title": "Beli komponen itu gampang. Yang susah cari yang bisa dipercaya.",
+      "items": [
+        { "title": "Garansi jelas", "desc": "Setiap komponen dan hasil rakitan bergaransi, dengan penjelasan yang transparan." },
+        { "title": "Teknisi berpengalaman", "desc": "Ditangani orang yang benar-benar paham hardware, bukan sekadar pasang." },
+        { "title": "Sparepart original", "desc": "Kami hanya jual barang baru dan resmi — tidak ada kejutan di kemudian hari." },
+        { "title": "Konsultasi gratis", "desc": "Bingung pilih komponen? Chat dulu, kami bantu susun rakitan yang pas." }
+      ]
+    },
+    "featured": {
+      "eyebrow": "Contoh rakitan",
+      "title": "Titik awal, bukan harga mati",
+      "subtitle": "Gambaran rakitan populer. Semuanya bisa disesuaikan — dan simulator kami bantu memetakan kebutuhanmu.",
+      "items": [
+        { "name": "Starter Gaming", "tag": "Gaming", "desc": "Main game populer di 1080p dengan frame rate mulus tanpa bikin dompet menangis." },
+        { "name": "Creator Rig", "tag": "Konten Kreatif", "desc": "Editing video, render, dan streaming lancar berkat CPU kencang dan RAM besar." },
+        { "name": "Office & Study", "tag": "Kerja / Harian", "desc": "Ringkas, senyap, dan responsif untuk kerja, kuliah, dan multitasking harian." }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Kata pelanggan",
+      "title": "Dipercaya para perakit & pekerja",
+      "items": [
+        { "name": "Rizky A.", "role": "Gamer", "quote": "Dibantuin milih part sesuai budget, hasil rakitannya rapi banget. Kabel management-nya juara." },
+        { "name": "Dewi S.", "role": "Video Editor", "quote": "Konsultasi lewat WhatsApp cepat dan jujur. PC-nya kuat buat editing seharian." },
+        { "name": "Bagas P.", "role": "Mahasiswa", "quote": "Laptop lama di-upgrade SSD, langsung ngebut lagi. Harga jelas, nggak ada biaya siluman." }
+      ]
+    },
+    "ctaBanner": {
+      "title": "Siap rakit atau butuh servis?",
+      "subtitle": "Cerita kebutuhanmu ke kami. Balasan cepat, saran jujur, tanpa paksaan.",
+      "cta": "Mulai chat WhatsApp"
+    }
+  },
+  "services": {
+    "eyebrow": "Layanan",
+    "title": "Semua soal PC, kami urus",
+    "subtitle": "Sales, service, dan accessories — sesuai janji di logo kami.",
+    "items": [
+      {
+        "id": "sales",
+        "title": "Sparepart & Komponen",
+        "desc": "Komponen original bergaransi untuk build baru maupun upgrade. Kami bantu pastikan setiap part cocok satu sama lain.",
+        "features": ["Prosesor Intel & AMD", "Kartu grafis NVIDIA & AMD", "Motherboard, RAM, storage", "Power supply & casing"]
+      },
+      {
+        "id": "builds",
+        "title": "Rakit PC Custom",
+        "desc": "Ceritakan kebutuhan dan budget, kami susun daftar komponen, rakit dengan rapi, dan uji stabilitas sebelum sampai ke tanganmu.",
+        "features": ["Konsultasi komponen gratis", "Cable management rapi", "Stress test & benchmark", "Instalasi OS & driver"]
+      },
+      {
+        "id": "service",
+        "title": "Servis & Upgrade",
+        "desc": "PC atau laptop bermasalah? Kami diagnosa dulu, jelaskan penyebabnya, baru perbaiki. Termasuk upgrade agar terasa baru lagi.",
+        "features": ["Diagnosa & perbaikan", "Cleaning & re-paste", "Upgrade SSD / RAM / VGA", "Recovery data (best effort)"]
+      },
+      {
+        "id": "accessories",
+        "title": "Aksesoris & Periferal",
+        "desc": "Lengkapi setup-mu dengan periferal yang nyaman dan awet, dari yang harian sampai gaming.",
+        "features": ["Keyboard & mouse", "Headset & speaker", "Monitor", "Kabel, adaptor & UPS"]
+      }
+    ],
+    "ctaTitle": "Butuh salah satu layanan ini?",
+    "ctaSubtitle": "Chat kami di WhatsApp — sebutkan kebutuhanmu, kami bantu dari sana."
+  },
+  "simulator": {
+    "eyebrow": "Simulator Rakitan",
+    "title": "Susun rakitanmu, lihat cocoknya untuk apa",
+    "subtitle": "Pilih komponen di tiap kategori. Alih-alih harga, kamu langsung tahu seberapa pas rakitan ini untuk gaming, kerja, konten, dan penggunaan harian. Kalau sudah sreg, kirim ke WhatsApp untuk penawaran.",
+    "buildTitle": "Pilih Komponen",
+    "ratingTitle": "Cocok untuk",
+    "summaryTitle": "Rakitanmu",
+    "choosePlaceholder": "Pilih komponen…",
+    "notSelected": "Belum dipilih",
+    "emptyState": "Mulai pilih komponen untuk melihat penilaiannya.",
+    "selectedCount": "{count} dari {total} komponen dipilih",
+    "sendCta": "Kirim rakitan ke WhatsApp",
+    "resetCta": "Reset",
+    "priceNote": "Harga tidak ditampilkan — kami beri penawaran terbaik lewat WhatsApp sesuai stok terkini.",
+    "categories": {
+      "cpu": "Prosesor (CPU)",
+      "gpu": "Kartu Grafis (GPU)",
+      "motherboard": "Motherboard",
+      "ram": "Memori (RAM)",
+      "storage": "Penyimpanan",
+      "psu": "Power Supply",
+      "cooler": "Pendingin CPU",
+      "case": "Casing"
+    },
+    "useCases": {
+      "gaming": "Gaming",
+      "work": "Kerja / Kantor",
+      "content": "Konten Kreatif",
+      "everyday": "Harian"
+    },
+    "tiers": {
+      "entry": "Hemat",
+      "mid": "Menengah",
+      "high": "Tinggi",
+      "enthusiast": "Enthusiast"
+    },
+    "levels": ["Kurang", "Cukup", "Bagus", "Sangat Bagus", "Luar Biasa"],
+    "wa": {
+      "greeting": "Halo Creative Computer! Saya tertarik dengan rakitan PC ini:",
+      "buildHeading": "Komponen:",
+      "suitedHeading": "Cocok untuk:",
+      "closing": "Boleh minta penawaran harganya? Terima kasih!"
+    }
+  },
+  "contact": {
+    "eyebrow": "Kontak & Lokasi",
+    "title": "Mampir atau chat dulu",
+    "subtitle": "Datang langsung ke toko untuk lihat barang dan konsultasi, atau mulai dari WhatsApp — mana pun yang lebih nyaman buatmu.",
+    "addressTitle": "Alamat Toko",
+    "hoursTitle": "Jam Buka",
+    "reachTitle": "Hubungi Kami",
+    "closed": "Tutup",
+    "mapTitle": "Peta lokasi toko"
+  },
+  "footer": {
+    "tagline": "Sales · Service · Accessories. Toko komputer tepercaya untuk rakit, servis, dan upgrade.",
+    "explore": "Jelajahi",
+    "reach": "Hubungi",
+    "follow": "Ikuti",
+    "rights": "Seluruh hak cipta dilindungi."
+  }
+}

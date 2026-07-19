@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette — derived from the Creative Computer logo */
+  --color-ink: #14181d; /* near-black charcoal, dark sections */
+  --color-carbon: #1e242b; /* panel surfaces on dark */
+  --color-carbon-2: #262e37; /* raised panel / borders on dark */
+  --color-orange: #f2621b; /* primary action (logo orange) */
+  --color-orange-hot: #ff7a33; /* hover / glow highlight */
+  --color-blue: #016fc4; /* trust / structure (logo blue) */
+  --color-sky: #3b9ae1; /* lighter blue accent */
+  --color-paper: #ffffff;
+  --color-mist: #f4f6f8; /* light section background */
+  --color-mist-2: #e9edf1; /* light borders / dividers */
+  --color-muted: #5a6673; /* secondary text on light */
+  --color-muted-dark: #9aa7b4; /* secondary text on dark */
+
+  /* Typography */
+  --font-display: var(--font-display), "Chakra Petch", sans-serif;
+  --font-body: var(--font-body), "IBM Plex Sans", sans-serif;
+  --font-mono: var(--font-mono), "IBM Plex Mono", monospace;
+
+  /* Radius — squared, hardware-panel feel */
+  --radius: 0.5rem;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Display headings default to the squared display face */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+}
+
+/* --- Signature: spec-sheet eyebrow --------------------------------------- */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* --- Signature: notched module frame ------------------------------------- */
+/* A clipped top-right corner echoes the logo's sliced letterforms. */
+.notch {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 14px) 0,
+    100% 14px,
+    100% 100%,
+    0 100%
+  );
+}
+.notch-lg {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 22px) 0,
+    100% 22px,
+    100% 100%,
+    0 100%
+  );
+}
+
+/* --- Signature: assembled grid backdrop ---------------------------------- */
+.grid-backdrop {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+/* Focus visibility floor */
+:focus-visible {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 2px;
+}
